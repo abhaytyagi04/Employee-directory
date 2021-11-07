@@ -1,0 +1,50 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace oop
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            employee employees = new employee();
+            employees.employee_name = "Abhay tyagi ";
+            employees.Employee_id = 456789;
+            employees.Employee_location = "Bangalore";
+            employees.Employee_salary = 20000;
+
+            employee new_emp = new employee();
+            new_emp.employee_name = "Rahul sharma ";
+            new_emp.Employee_id = 455128;
+            new_emp.Employee_location = "Hyderabad ";
+            new_emp.Employee_salary = 45000;
+
+            Console.WriteLine("--------Employee 1----------- ");
+
+            Console.WriteLine(employees.employee_name);
+            Console.WriteLine(employees.Employee_id);
+            Console.WriteLine(employees.Employee_location);
+            Console.WriteLine(employees.Employee_salary);
+
+            Console.WriteLine("\n---------Employee 2 --------");
+            Console.WriteLine(new_emp.employee_name);
+            Console.WriteLine(new_emp.Employee_id);
+            Console.WriteLine(new_emp.Employee_location);
+            Console.WriteLine(new_emp.Employee_salary);
+
+
+
+
+        }
+        class employee
+        {
+           public string employee_name;
+            public int Employee_id;
+            public int Employee_salary;
+            public string Employee_location; 
+        }
+    }
+}
